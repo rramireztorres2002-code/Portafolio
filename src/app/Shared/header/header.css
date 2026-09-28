@@ -1,0 +1,12 @@
+.rk-mobile-menu + label svg {
+  display: block;
+  width: 22px;
+  height: 10px;
+  margin: 1px;
+}
+.rk-urku-search + label svg {
+  display: block;
+  width: 5px;
+  height: 5px;
+  margin: 1px;
+}

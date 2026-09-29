@@ -5,7 +5,7 @@ import { Footer } from './Shared/footer/footer';
 import { Portafolio } from './pages/portafolio/portafolio';
 
 @Component({
-  imports: [RouterOutlet, Header, Footer, Portafolio],
+  imports: [Header, Footer, Portafolio],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

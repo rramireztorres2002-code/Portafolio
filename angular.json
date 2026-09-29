@@ -23,12 +23,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets/img/urku-ico.svg"
             ],
             "styles": [
               "src/styles.css",
               "src/assets/css/aurora-theme-base.min.css",
-              "src/assets/css/aurora-pack.min.css"
+              "src/assets/css/aurora-pack.min.css",
+              "src/assets/css/urku.min.css",
+              "src/assets/css/urku.css"
             ]
           },
           "configurations": {

@@ -3,9 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Header } from './Shared/header/header';
 import { Footer } from './Shared/footer/footer';
 import { Portafolio } from './pages/portafolio/portafolio';
+import { About } from './pages/about/about';
+import { Items } from './pages/items/items';
 
 @Component({
-  imports: [Header, Footer, Portafolio],
+  imports: [Header, Footer, Portafolio, About, Items, RouterOutlet],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

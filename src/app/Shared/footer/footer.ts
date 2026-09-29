@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-footer',
   styleUrl: './footer.css',
   templateUrl: './footer.html',
 })
-export class Footer implements OnInit {
-  year: number = new Date().getFullYear();
-  constructor() {}
-  ngOnInit(): void {}
+export class Footer {
+  year = new Date().getFullYear();
 }

@@ -1,5 +1,8 @@
 import { Routes } from '@angular/router';
-import { Header } from './Shared/header/header';
-import { HttpHeaders } from '@angular/common/http';
+import { Portafolio } from './pages/portafolio/portafolio';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', redirectTo: 'portafolio', pathMatch: 'full' },
+  { path: 'portafolio', component: Portafolio },
+  { path: '**', redirectTo: 'portafolio' },
+];

@@ -5,7 +5,7 @@ import { Items } from './pages/items/items';
 
 export const routes: Routes = [
  
-  { path: '', redirectTo: 'portafolio', pathMatch: 'full' },
+  { path: 'home', redirectTo: 'portafolio', pathMatch: 'full' },
   { path: 'portafolio', component: Portafolio},
   { path: 'about', component: About },
   { path: 'items', component: Items},

@@ -10,6 +10,7 @@ import { InfoPagina } from '../../services/info-pagina';
 })
 export class Footer {
   year = new Date().getFullYear();
+mailTo: any;
   constructor(public infoPagina: InfoPagina) {} 
   
     ngOnInit() {}

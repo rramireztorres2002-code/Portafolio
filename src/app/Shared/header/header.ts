@@ -12,6 +12,6 @@ export class Header implements OnInit {
   constructor(public infoPagina: InfoPagina) {} 
 
   ngOnInit() {
-    // Initialization logic here
+    
   }
 }

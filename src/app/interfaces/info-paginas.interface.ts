@@ -2,6 +2,7 @@
 
 
  export interface InfoPagina {
+    tumblr?: string;
      titulo?: string;
      email?: string;
      nombre_corto?: string;

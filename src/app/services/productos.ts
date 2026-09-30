@@ -1,0 +1,24 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { producto } from '../interfaces/producto.interface';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class Productos {
+
+  producto: producto[] = [];
+
+  constructor(private httpClient: HttpClient) {
+    console.log('PRODUCTOS SERVICE CREATED');
+
+    this.httpClient
+      .get<producto[]>(
+        'https://angular-html-2953d-default-rtdb.firebaseio.com/productors_idx.json'
+      )
+      .subscribe((resp: producto[]) => {
+        this.producto = resp;
+        console.log('PRODUCTOS DATA LOADED:', resp);
+      });
+  }
+}

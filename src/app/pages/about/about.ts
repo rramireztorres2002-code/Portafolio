@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
+import { InfoPagina } from '../../services/info-pagina';
+
 
 @Component({
   imports: [],
@@ -6,4 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './about.css',
   templateUrl: './about.html',
 })
-export class About {}
+export class About implements OnInit {
+  constructor(public infoPagina: InfoPagina) { }
+  ngOnInit() { 
+
+  }
+
+} 

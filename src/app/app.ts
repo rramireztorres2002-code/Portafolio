@@ -5,13 +5,17 @@ import { Footer } from './Shared/footer/footer';
 import { Portafolio } from './pages/portafolio/portafolio';
 import { About } from './pages/about/about';
 import { Items } from './pages/items/items';
+import { InfoPagina } from './services/info-pagina';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @Component({
-  imports: [Header, Footer, Portafolio, About, Items, RouterOutlet],
+  imports: [Header, Footer, Portafolio, About, Items, RouterOutlet,HttpClientModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
 export class App {
   protected readonly title = signal('Portafolio');
+  constructor(public infoPagina: InfoPagina) {}
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { InfoPagina } from '../../services/info-pagina';
 
 @Component({
   imports: [RouterLink],
@@ -9,4 +10,7 @@ import { RouterLink } from '@angular/router';
 })
 export class Footer {
   year = new Date().getFullYear();
+  constructor(public infoPagina: InfoPagina) {} 
+  
+    ngOnInit() {}
 }

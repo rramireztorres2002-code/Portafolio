@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NgForOf } from '@angular/common';
+import { NgForOf, NgIf } from '@angular/common';
 import { Productos } from '../../services/productos';
 
 @Component({
 selector: 'app-portafolio',
 templateUrl: './portafolio.html',
-imports: [NgForOf],
+imports: [NgForOf, NgIf],
 })
 export class Portafolio {
 

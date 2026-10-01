@@ -8,7 +8,7 @@ import { producto } from '../interfaces/producto.interface';
 export class Productos {
 
   producto: producto[] = [];
-
+  cargando = true;
   constructor(private httpClient: HttpClient) {
     console.log('PRODUCTOS SERVICE CREATED');
 
@@ -18,7 +18,13 @@ export class Productos {
       )
       .subscribe((resp: producto[]) => {
         this.producto = resp;
-        console.log('PRODUCTOS DATA LOADED:', resp);
-      });
+        
+        setTimeout(() => {
+          this.cargando = false;
+        }, 1000);
+      
+      }
+        
+    )
   }
 }

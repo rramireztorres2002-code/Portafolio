@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
-import { NgForOf, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { Productos } from '../../services/productos';
 
 @Component({
-selector: 'app-portafolio',
-templateUrl: './portafolio.html',
-imports: [NgForOf, NgIf],
+  selector: 'app-portafolio',
+  templateUrl: './portafolio.html',
+  imports: [
+    CommonModule,
+    RouterLink
+  ]
 })
 export class Portafolio {
 
-constructor(public productos: Productos) {
-console.log('PORTAFOLIO CREATED');
-console.log('PRODUCTOS:', productos);
-}
+  constructor(public productos: Productos) {}
 
 }

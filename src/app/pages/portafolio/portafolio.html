@@ -2,7 +2,7 @@
   <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
     <!-- 1 -->
 
-    <div aling="center" *ngIf="productos.cargando">
+    <div class="loading-container" *ngIf="productos.cargando">
       <h2>Cargando...</h2>
       <div class="loader loader--style1" title="0">
         <svg
@@ -68,7 +68,7 @@
     <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
       <a
         *ngFor="let producto of productos.producto"
-        href="/items"
+        routerLink="/items/{{ producto.cod }}"
         class="animated fadeIn rk-item ae-masonry__item"
       >
         <img

@@ -23,7 +23,7 @@ ngOnInit() {
     const termino = params['termino'];
     console.log('BÚSQUEDA:', termino);
 
-    // Esperar a que el filtrado termine (por si hay promesa pendiente)
+    
     await this.productos.buscarProducto(termino);
 
     // Forzar la detección de cambios
